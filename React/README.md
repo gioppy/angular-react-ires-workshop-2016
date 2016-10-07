@@ -1,2 +1,2 @@
-# React Seed
-Seed repository for React projects
+# AngularJS and React Workshop @IRES Udine
+Sample projects for Angular and React workshop @ IRES Udine
