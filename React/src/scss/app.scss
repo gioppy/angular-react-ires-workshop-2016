@@ -1,0 +1,45 @@
+@import "variables";
+@import "reset";
+
+::-webkit-input-placeholder{
+  @include placholder();
+}
+:-moz-placeholder{
+  @include placholder();
+}
+:-ms-input-placeholder{
+  @include placholder();
+}
+::-moz-placeholder{
+  @include placholder();
+}
+
+body{
+  font: 90%/1 'Roboto', Helvetica, sans-serif;
+  background: $color-dark-grey;
+  color: $color-white;
+}
+
+.app-container{
+  padding: 0 15%;
+}
+
+.app-name{
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 3em;
+  font-weight: 300;
+  margin: 1em 0;
+}
+
+.form-text-name{
+  flex-grow: 1;
+  border: 2px solid $color-dark-grey;
+  padding: 0 1em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+@import "button";
+@import "scores";
+@import "player";
