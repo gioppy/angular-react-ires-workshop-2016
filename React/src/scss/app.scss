@@ -18,10 +18,12 @@ body{
   font: 90%/1 'Roboto', Helvetica, sans-serif;
   background: $color-dark-grey;
   color: $color-white;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .app-container{
-  padding: 0 15%;
+  padding: 0 5%;
 }
 
 .app-name{

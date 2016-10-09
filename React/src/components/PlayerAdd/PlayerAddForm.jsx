@@ -14,8 +14,10 @@ var PlayerAddForm = React.createClass({
   },
   handlePlayerDiscard: function(){
     this.refs.player.value = '';
-    var panel = document.getElementById('player-add');
-    panel.style.display = 'none';
+    var p = document.getElementById('player-add');
+    p.setAttribute('class', 'player-add animated fadeOutUp');
+    var s = document.getElementById('scores');
+    s.setAttribute('class', 'scores animated zoomIn');
   },
   render: function(){
     var {color} = this.props;

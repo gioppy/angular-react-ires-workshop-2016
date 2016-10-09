@@ -5,6 +5,7 @@
   border: 2px solid $color-dark-grey;
   background-color: $color-grey;
   box-sizing: border-box;
+  transition: border-width .1s;
 }
 
 .button--selected{

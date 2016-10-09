@@ -6,7 +6,7 @@ var ScoresPlayers = require('ScoresPlayers');
 var Scores = React.createClass({
   render: function(){
     return (
-      <div className="scores">
+      <div className="scores animated" id="scores">
         <div className="scores-container">
           <ScoresControls />
           <ScoresPlayers />

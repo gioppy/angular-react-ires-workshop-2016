@@ -4,8 +4,10 @@ var Button = require('Button');
 
 var ScoresControls = React.createClass({
   handleNewPlayer: function(){
-    var panel = document.getElementById('player-add');
-    panel.style.display = 'block';
+    var p = document.getElementById('player-add');
+    p.setAttribute('class', 'player-add animated fadeInDown');
+    var s = document.getElementById('scores');
+    s.setAttribute('class', 'scores animated zoomOut');
   },
   render: function(){
     return (

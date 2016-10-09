@@ -19,8 +19,10 @@ var PlayerAdd = React.createClass({
       name: name
     }, () => {
       reactfireApi.insert(this.ref, this.state);
-      var panel = document.getElementById('player-add');
-      panel.style.display = 'none';
+      var p = document.getElementById('player-add');
+      p.setAttribute('class', 'player-add animated fadeOutUp');
+      var s = document.getElementById('scores');
+      s.setAttribute('class', 'scores animated zoomIn');
     });
   },
   handleColorPlayer: function(color){
@@ -32,7 +34,7 @@ var PlayerAdd = React.createClass({
     var {color} = this.state;
 
     return (
-      <div className="player-add" id="player-add">
+      <div className="player-add animated fadeOutUp" id="player-add">
         <PlayerAddColors colorChange={this.handleColorPlayer} />
         <PlayerAddForm addNewPlayer={this.handleNewPlayer} color={color} />
       </div>
