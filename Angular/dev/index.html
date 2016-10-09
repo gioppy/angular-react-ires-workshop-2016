@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Scorekeeper Angular</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,900" rel="stylesheet">
+  <!-- build:cssvendor -->
+  <!-- endbuild -->
+
+  <!-- build:cssbundle -->
+  <link rel="stylesheet" href="assets/fonts/fonts.min.css" />
+  <link rel="stylesheet" href="assets/styles/style.min.css" />
+  <!-- endbuild -->
+</head>
+<body>
+  <div ng-app="scorekeeper" class="app-container">
+    <h1 class="app-name">Scorekeeper</h1>
+    <scores></scores>
+    <player-add></player-add>
+  </div>
+
+  <!-- build:jsvendor -->
+  <script type="text/javascript" src="assets/libraries/angular/angular.min.js"></script>
+  <script type="text/javascript" src="assets/libraries/firebase/firebase.min.js"></script>
+  <script type="text/javascript" src="assets/libraries/angularfire/dist/angularfire.min.js"></script>
+  <script type="text/javascript" src="app/api/firebase.min.js"></script>
+  <!-- endbuild -->
+
+  <!-- build:jsbundle -->
+  <script type="text/javascript" src="app/app.module.min.js"></script>
+  <script type="text/javascript" src="app/app.config.min.js"></script>
+  <script type="text/javascript" src="app/shared/btn/btn.component.min.js"></script>
+  <script type="text/javascript" src="app/shared/Firebase.service.min.js"></script>
+  <script type="text/javascript" src="app/components/Player/player.component.min.js"></script>
+  <script type="text/javascript" src="app/components/Scores/scores.component.min.js"></script>
+  <script type="text/javascript" src="app/components/Scores/scoresControls.component.min.js"></script>
+  <script type="text/javascript" src="app/components/Scores/scoresPlayers.component.min.js"></script>
+  <script type="text/javascript" src="app/components/PlayerAdd/playerAdd.component.min.js"></script>
+  <script type="text/javascript" src="app/components/PlayerAdd/playerAddColors.component.min.js"></script>
+  <script type="text/javascript" src="app/components/PlayerAdd/playerAddForm.component.min.js"></script>
+  <!-- endbuild -->
+</body>
+</html>

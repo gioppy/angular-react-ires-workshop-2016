@@ -1,0 +1,176 @@
+.player{
+  display: flex;
+  color: $color-dark-grey;
+  transition: .7s;
+
+  > *{
+    border: 2px solid $color-dark-grey;
+    background-color: $color-grey;
+  }
+
+  &.color-red{
+    > * {background-color: $color-red;}
+  }
+
+  &.color-blue{
+    > * {background-color: $color-blue;}
+  }
+
+  &.color-green{
+    > * {background-color: $color-green;}
+  }
+
+  &.color-yellow{
+    > * {background-color: $color-yellow;}
+  }
+
+  &.color-violet{
+    > * {background-color: $color-violet;}
+  }
+
+  &.color-white{
+    > * {background-color: $color-white;}
+  }
+}
+
+.player-name{
+  flex-grow: 3;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  font-size: 1.3em;
+  width: 50%;
+  padding: 0.8em 1em;
+  line-height: 1.9;
+}
+
+.player-score{
+  flex-grow: 1;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 0.8em 1em;
+  font-size: 1.3em;
+  font-weight: bold;
+  width: 20%;
+  line-height: 1.9;
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+
+@-webkit-keyframes fadeOutUp {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+}
+
+@keyframes fadeOutUp {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+}
+
+.fadeOutUp {
+  -webkit-animation-name: fadeOutUp;
+  animation-name: fadeOutUp;
+}
+
+.player-add{
+  position: absolute;
+  width: 90%;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  background-color: $color-dark-grey;
+  padding: 30vh 5%;
+}
+
+.player-add-colors,
+.player-add-form{
+  display: flex;
+  width: 100%;
+}
+
+.player-add-colors{
+  > *{
+    flex-grow: 1;
+  }
+}
+
+.player-add-form{
+  > * {
+    transition: background-color .7s;
+  }
+
+  &.color-red{
+    > * {background-color: $color-red;}
+  }
+
+  &.color-blue{
+    > * {background-color: $color-blue;}
+  }
+
+  &.color-green{
+    > * {background-color: $color-green;}
+  }
+
+  &.color-yellow{
+    > * {background-color: $color-yellow;}
+  }
+
+  &.color-violet{
+    > * {background-color: $color-violet;}
+  }
+
+  &.color-white{
+    > * {background-color: $color-white;}
+  }
+}

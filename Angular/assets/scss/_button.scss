@@ -1,0 +1,75 @@
+.button{
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  border: 2px solid $color-dark-grey;
+  background-color: $color-grey;
+  box-sizing: border-box;
+  transition: border-width .1s;
+}
+
+.button--selected{
+  border-width: 5px;
+}
+
+.button--no-text{
+  font-size: 1px;
+}
+
+.button--color-red{
+  background-color: $color-red;
+}
+
+.button--color-violet{
+  background-color: $color-violet;
+}
+
+.button--color-blue{
+  background-color: $color-blue;
+}
+
+.button--color-green{
+  background-color: $color-green;
+}
+
+.button--color-yellow{
+  background-color: $color-yellow;
+}
+
+.button--color-white{
+  background-color: $color-white;
+}
+
+.button_icon{
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 40%;
+}
+
+.button_icon--user{
+  background-image: url("../../dist/assets/images/add_user.svg");
+}
+
+.button_icon--user-remove{
+  background-image: url("../../dist/assets/images/remove_user.svg");
+}
+
+.button_icon--cycle{
+  background-image: url("../../dist/assets/images/cycle.svg");
+}
+
+.button_icon--minus{
+  background-image: url("../../dist/assets/images/minus.svg");
+}
+
+.button_icon--plus{
+  background-image: url("../../dist/assets/images/plus.svg");
+}
+
+.button_icon--cross{
+  background-image: url("../../dist/assets/images/cross.svg");
+}
+
+.button_icon--check{
+  background-image: url("../../dist/assets/images/check.svg");
+}

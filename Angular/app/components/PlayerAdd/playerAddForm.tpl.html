@@ -1,0 +1,5 @@
+<form ng-submit="$ctrl.submitNewPlayer()" class="player-add-form">
+  <btn text="Discard" on-click="$ctrl.handlePlayerDiscard()"></btn>
+  <input class="form-text-name" type="text" placeholder="Name of the player" name="player" ng-model="$ctrl.player" />
+  <button type="submit" class="button button--no-text button_icon button_icon--check">Save</button>
+</form>

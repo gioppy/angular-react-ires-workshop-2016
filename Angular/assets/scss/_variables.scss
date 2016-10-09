@@ -1,0 +1,17 @@
+// Colors
+
+$color-grey: #e9ecef;
+$color-dark-grey: #212529;
+$color-red: #fa5252;
+$color-violet: #b197fc;
+$color-blue: #329af0;
+$color-green: #51cf66;
+$color-yellow: #ffd43b;
+$color-white: #ffffff;
+
+// Mixins
+
+@mixin placholder(){
+  font-weight: bold;
+  text-transform: uppercase;
+}
