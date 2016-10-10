@@ -1,4 +1,4 @@
-# React version of Scorekeeper App
+# AngularJs version of Scorekeeper App
 ## Installation and Usage
 ### Step 1: install Node and npm
 Before using this project, you must install NodeJS (>= 4.4.5) and npm. You can download the package from [NodeJS website](https://nodejs.org/en/).
