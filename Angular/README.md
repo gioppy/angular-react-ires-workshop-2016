@@ -1,6 +1,4 @@
-# Angularjs 1.x Seed Project
-Seed repository for AngularJS 1.x projects, used on my courses and on my real projects of AngularJS 1.x.
-
+# React version of Scorekeeper App
 ## Installation and Usage
 ### Step 1: install Node and npm
 Before using this project, you must install NodeJS (>= 4.4.5) and npm. You can download the package from [NodeJS website](https://nodejs.org/en/).
@@ -124,18 +122,3 @@ If you need to remove the _dist_ folder, you can execute on terminal:
 ```
   gulp dist:clean
 ```
-### Optional: JSON server
-If you want to work with a fake JSON Api, you can use [JSON Server](https://github.com/typicode/json-server). The seed is just configured for using json-server: you must install the package globally
-```
-  npm install -g json-server
-```
-and add your data in `json-server/db.json`. The server works with a simple JSON file, so you can test/mock your data easily. Please, refer to the json-server documentation on all of the possibilities.
-
-Once you have installed the package, you can start the server with
-```
-  npm run db
-```
-The server run on localhost, on port 3002.
-## TODO
-- [ ] Add testing frameworks
-- [x] Integrate with [json-server](https://github.com/typicode/json-server) for fake/mock data.
