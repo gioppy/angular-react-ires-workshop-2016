@@ -1,3 +1,0 @@
-<div class="scores-players">
-  <player ng-repeat="player in $ctrl.players | orderBy:'-score' track by $index" name="{{player.name}}" score="player.score" color="{{player.color}}" plus-one="$ctrl.handlePlusOne(player)" minus-one="$ctrl.handleMinusOne(player)" remove-player="$ctrl.handleRemovePlayer(player)"></player>
-</div>

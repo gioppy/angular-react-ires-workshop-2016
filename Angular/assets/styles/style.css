@@ -45,6 +45,8 @@ body { font: 90%/1 'Roboto', Helvetica, sans-serif; background: #212529; color: 
 
 .button { display: inline-block; width: 70px; height: 70px; border: 2px solid #212529; background-color: #e9ecef; box-sizing: border-box; transition: border-width .1s; }
 
+.button--full { width: 100%; }
+
 .button--selected { border-width: 5px; }
 
 .button--no-text { font-size: 1px; }
@@ -63,19 +65,19 @@ body { font: 90%/1 'Roboto', Helvetica, sans-serif; background: #212529; color: 
 
 .button_icon { background-repeat: no-repeat; background-position: center center; background-size: 40%; }
 
-.button_icon--user { background-image: url("../../dist/assets/images/add_user.svg"); }
+.button_icon--user { background-image: url("../images/add_user.svg"); }
 
-.button_icon--user-remove { background-image: url("../../dist/assets/images/remove_user.svg"); }
+.button_icon--user-remove { background-image: url("../images/remove_user.svg"); }
 
-.button_icon--cycle { background-image: url("../../dist/assets/images/cycle.svg"); }
+.button_icon--cycle { background-image: url("../images/cycle.svg"); }
 
-.button_icon--minus { background-image: url("../../dist/assets/images/minus.svg"); }
+.button_icon--minus { background-image: url("../images/minus.svg"); }
 
-.button_icon--plus { background-image: url("../../dist/assets/images/plus.svg"); }
+.button_icon--plus { background-image: url("../images/plus.svg"); }
 
-.button_icon--cross { background-image: url("../../dist/assets/images/cross.svg"); }
+.button_icon--cross { background-image: url("../images/cross.svg"); }
 
-.button_icon--check { background-image: url("../../dist/assets/images/check.svg"); }
+.button_icon--check { background-image: url("../images/check.svg"); }
 
 .scores-container { display: flex; }
 
@@ -111,19 +113,19 @@ body { font: 90%/1 'Roboto', Helvetica, sans-serif; background: #212529; color: 
 
 .player { display: flex; color: #212529; transition: .7s; }
 
-.player > * { border: 2px solid #212529; background-color: #e9ecef; }
+.player .player-fragment, .player .button { border: 2px solid #212529; background-color: #e9ecef; }
 
-.player.color-red > * { background-color: #fa5252; }
+.player.color-red .player-fragment, .player.color-red .button { background-color: #fa5252; }
 
-.player.color-blue > * { background-color: #329af0; }
+.player.color-blue .player-fragment, .player.color-blue .button { background-color: #329af0; }
 
-.player.color-green > * { background-color: #51cf66; }
+.player.color-green .player-fragment, .player.color-green .button { background-color: #51cf66; }
 
-.player.color-yellow > * { background-color: #ffd43b; }
+.player.color-yellow .player-fragment, .player.color-yellow .button { background-color: #ffd43b; }
 
-.player.color-violet > * { background-color: #b197fc; }
+.player.color-violet .player-fragment, .player.color-violet .button { background-color: #b197fc; }
 
-.player.color-white > * { background-color: #ffffff; }
+.player.color-white .player-fragment, .player.color-white .button { background-color: #ffffff; }
 
 .player-name { flex-grow: 3; box-sizing: border-box; text-transform: uppercase; font-size: 1.3em; width: 50%; padding: 0.8em 1em; line-height: 1.9; }
 
@@ -165,16 +167,16 @@ body { font: 90%/1 'Roboto', Helvetica, sans-serif; background: #212529; color: 
 
 .player-add-colors > * { flex-grow: 1; }
 
-.player-add-form > * { transition: background-color .7s; }
+.player-add-form .player-fragment, .player-add-form .button { transition: background-color .7s; }
 
-.player-add-form.color-red > * { background-color: #fa5252; }
+.player-add-form.color-red .player-fragment, .player-add-form.color-red .button { background-color: #fa5252; }
 
-.player-add-form.color-blue > * { background-color: #329af0; }
+.player-add-form.color-blue .player-fragment, .player-add-form.color-blue .button { background-color: #329af0; }
 
-.player-add-form.color-green > * { background-color: #51cf66; }
+.player-add-form.color-green .player-fragment, .player-add-form.color-green .button { background-color: #51cf66; }
 
-.player-add-form.color-yellow > * { background-color: #ffd43b; }
+.player-add-form.color-yellow .player-fragment, .player-add-form.color-yellow .button { background-color: #ffd43b; }
 
-.player-add-form.color-violet > * { background-color: #b197fc; }
+.player-add-form.color-violet .player-fragment, .player-add-form.color-violet .button { background-color: #b197fc; }
 
-.player-add-form.color-white > * { background-color: #ffffff; }
+.player-add-form.color-white .player-fragment, .player-add-form.color-white .button { background-color: #ffffff; }

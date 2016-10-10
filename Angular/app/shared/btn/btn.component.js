@@ -4,8 +4,9 @@
   angular.module('scorekeeper')
     .component('btn', {
       templateUrl: 'app/shared/btn/btn.tpl.html',
+      transclude: true,
       bindings: {
-        text: '@',
+        extraClasses: '@',
         onClick: '&'
       },
       controller: btnController

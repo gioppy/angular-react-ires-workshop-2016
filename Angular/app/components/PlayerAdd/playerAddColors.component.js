@@ -16,5 +16,9 @@
       this.color = color;
       this.newPlayer.color = color;
     };
+
+    this.selectedColor = function(color){
+      return this.color === color ? ' button--selected' : '';
+    };
   }
 })();

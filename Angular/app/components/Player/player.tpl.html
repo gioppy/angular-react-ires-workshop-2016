@@ -1,7 +1,5 @@
-<div ng-class="['player', 'color-'+$ctrl.color]">
-  <btn text="Delete" on-click="$ctrl.removePlayer()"></btn>
-  <h2 class="player-name">{{$ctrl.name}}</h2>
-  <span class="player-score">{{$ctrl.score}}</span>
-  <btn text="Add one point" on-click="$ctrl.plusOne()"></btn>
-  <btn text="Substract one point" on-click="$ctrl.minusOne()"></btn>
-</div>
+<btn on-click="$ctrl.removePlayer()" extra-classes="button--no-text button_icon button_icon--cross">Delete</btn>
+<h2 class="player-name player-fragment"><ng-transclude></ng-transclude></h2>
+<span class="player-score player-fragment">{{$ctrl.score}}</span>
+<btn on-click="$ctrl.plusOne()" extra-classes="button--no-text button_icon button_icon--plus">Add one point</btn>
+<btn on-click="$ctrl.minusOne()" extra-classes="button--no-text button_icon button_icon--minus">Substract one point</btn>

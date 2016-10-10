@@ -8,6 +8,10 @@
   transition: border-width .1s;
 }
 
+.button--full{
+  width: 100%;
+}
+
 .button--selected{
   border-width: 5px;
 }
@@ -47,29 +51,29 @@
 }
 
 .button_icon--user{
-  background-image: url("../../dist/assets/images/add_user.svg");
+  background-image: url("../images/add_user.svg");
 }
 
 .button_icon--user-remove{
-  background-image: url("../../dist/assets/images/remove_user.svg");
+  background-image: url("../images/remove_user.svg");
 }
 
 .button_icon--cycle{
-  background-image: url("../../dist/assets/images/cycle.svg");
+  background-image: url("../images/cycle.svg");
 }
 
 .button_icon--minus{
-  background-image: url("../../dist/assets/images/minus.svg");
+  background-image: url("../images/minus.svg");
 }
 
 .button_icon--plus{
-  background-image: url("../../dist/assets/images/plus.svg");
+  background-image: url("../images/plus.svg");
 }
 
 .button_icon--cross{
-  background-image: url("../../dist/assets/images/cross.svg");
+  background-image: url("../images/cross.svg");
 }
 
 .button_icon--check{
-  background-image: url("../../dist/assets/images/check.svg");
+  background-image: url("../images/check.svg");
 }

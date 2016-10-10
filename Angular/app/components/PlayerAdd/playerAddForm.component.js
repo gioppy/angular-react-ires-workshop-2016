@@ -13,10 +13,14 @@
   PlayerAddFormController.$inject = ['FirebaseService'];
 
   function PlayerAddFormController(fs){
+    var p = document.querySelectorAll('#player-add');
+    var s = document.querySelectorAll('#scores');
     this.player;
 
     this.handlePlayerDiscard = function(){
       this.player = '';
+      angular.element(p).removeClass('fadeInDown').addClass('fadeOutUp');
+      angular.element(s).removeClass('zoomOut').addClass('zoomIn');
     };
 
     this.submitNewPlayer = function(){
@@ -25,7 +29,10 @@
         this.player = '';
 
         var ref = fs.ref();
-        ref.$add(this.newPlayer)
+        ref.$add(this.newPlayer);
+
+        angular.element(p).removeClass('fadeInDown').addClass('fadeOutUp');
+        angular.element(s).removeClass('zoomOut').addClass('zoomIn');
       }
     };
   };

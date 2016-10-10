@@ -1,5 +1,5 @@
-<form ng-submit="$ctrl.submitNewPlayer()" class="player-add-form">
-  <btn text="Discard" on-click="$ctrl.handlePlayerDiscard()"></btn>
-  <input class="form-text-name" type="text" placeholder="Name of the player" name="player" ng-model="$ctrl.player" />
+<form ng-submit="$ctrl.submitNewPlayer()" ng-class="['player-add-form', 'color-'+$ctrl.newPlayer.color]">
+  <btn on-click="$ctrl.handlePlayerDiscard()" extra-classes="button--no-text button_icon button_icon--user-remove">Discard</btn>
+  <input class="form-text-name player-fragment" type="text" placeholder="Name of the player" name="player" ng-model="$ctrl.player" />
   <button type="submit" class="button button--no-text button_icon button_icon--check">Save</button>
 </form>
