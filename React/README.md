@@ -24,4 +24,8 @@ To start the application, simply run
 ```
   webpack-dev-server --content-base dist/
 ```
+or
+```
+  npm start
+```
 The URL of application id `http://localhost:8080/webpack-dev-server/`
