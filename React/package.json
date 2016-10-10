@@ -4,6 +4,7 @@
   "description": "Seed project for React Js",
   "main": "index.js",
   "scripts": {
+    "start": "  webpack-dev-server --content-base dist/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Giovanni Buffa",
@@ -21,6 +22,7 @@
     "babel-preset-react": "^6.16.0",
     "babel-preset-stage-0": "^6.16.0",
     "css-loader": "^0.25.0",
+    "express": "^4.14.0",
     "node-sass": "^3.10.1",
     "sass-loader": "^4.0.2",
     "script-loader": "^0.7.0",
