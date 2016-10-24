@@ -5,7 +5,7 @@
     .component('playerAddColors', {
       templateUrl: 'app/components/PlayerAdd/playerAddColors.tpl.html',
       bindings: {
-        newPlayer: '='
+        newPlayer: '<'
       },
       controller: PlayerAddColorsController
     });

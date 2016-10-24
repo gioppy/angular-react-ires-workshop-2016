@@ -15,7 +15,6 @@
   function btnController(){
     this.clickBtn = function(){
       this.onClick();
-      console.log("BTN");
     }.bind(this);
   }
 })();

@@ -5,7 +5,7 @@
     .component('playerAddForm', {
       templateUrl: 'app/components/PlayerAdd/playerAddForm.tpl.html',
       bindings: {
-        newPlayer: '='
+        newPlayer: '<'
       },
       controller: PlayerAddFormController
     });
@@ -35,5 +35,5 @@
         angular.element(s).removeClass('zoomOut').addClass('zoomIn');
       }
     };
-  };
+  }
 })();

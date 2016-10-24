@@ -8,13 +8,11 @@
     });
 
   function scoresControlsController(){
-    var vm = this;
-
-    vm.handleNewPlayer = function(){
+    this.handleNewPlayer = function(){
       var p = document.querySelectorAll('#player-add');
       var s = document.querySelectorAll('#scores');
       angular.element(p).removeClass('fadeOutUp').addClass('fadeInDown');
-      angular.element(s).addClass('zoomOut')
+      angular.element(s).addClass('zoomOut');
     };
   }
 })();

@@ -6,7 +6,7 @@
       templateUrl: 'app/components/Player/player.tpl.html',
       transclude: true,
       bindings: {
-        score: '=',
+        score: '<',
         plusOne: '&',
         minusOne: '&',
         removePlayer: '&'

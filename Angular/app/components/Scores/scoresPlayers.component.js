@@ -10,23 +10,6 @@
   ScoresPlayersController.$inject = ['FirebaseService'];
 
   function ScoresPlayersController(fs){
-    /*this.players = [
-      {
-        name: 'Pippo',
-        score: 0,
-        color: 'red'
-      },
-      {
-        name: 'Pluto',
-        score: 0,
-        color: 'red'
-      },
-      {
-        name: 'Paperino',
-        score: 0,
-        color: 'red'
-      }
-    ];*/
     this.players = fs.ref();
 
     this.handlePlusOne = function(player){
@@ -42,7 +25,6 @@
     };
 
     this.handleRemovePlayer = function(player){
-      //this.players.splice($index,1);
       var index = this.players.indexOf(player);
       this.players.$remove(this.players[index]);
     };
